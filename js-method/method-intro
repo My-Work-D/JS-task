@@ -1,0 +1,69 @@
+Essential JavaScript Array Functions
+
+push():
+Description: Adds one or more elements to the end of an array and returns the new length of the array.
+Sinhala: push() ක්‍රියාකාරකමක්, ලැයිස්තු වල අවසන්ට එක හෝ බහු අංග එක් කරයි සහ ලැයිස්තුවේ නව දිග එකතු කරයි.
+
+pop():
+Description: Removes the last element from an array and returns that element, reducing the array's length by one.
+Sinhala: pop() ක්‍රියාකාරකම, ලැයිස්තුවෙන් අවසන් අංගය ඉවත් කරයි සහ එම අංගය ආපසු ලබා දෙයි, එමඟින් ලැයිස්තුවේ දිග අඩු කරයි.
+
+shift():
+Description: Removes the first element from an array and returns it, reducing the array's length by one.
+Sinhala: shift() ක්‍රියාකාරකම, ලැයිස්තුවෙන් ප්‍රථම අංගය ඉවත් කරයි සහ එය ආපසු ලබා දෙයි, එමඟින් ලැයිස්තුවේ දිග අඩු කරයි.
+
+unshift():
+Description: Adds one or more elements to the beginning of an array and returns the new length of the array.
+Sinhala: unshift() ක්‍රියාකාරකම, ලැයිස්තුවේ ආරම්භයට එක හෝ බහු අංග එක් කරයි සහ ලැයිස්තුවේ නව දිග එකතු කරයි.
+
+Iterating Over Arrays
+
+forEach():
+Description: Executes a function for each element in the array. Great for applying operations or logging values.
+Sinhala: forEach() ක්‍රියාකාරකම, ලැයිස්තුවේ සෑම අංගයකටම ක්‍රියාවක් ක්‍රියාත්මක කරයි. මෙය ක්‍රියාත්මක කිරීම හෝ අගයන් ලියා ගැනීමට භයානකයි.
+
+map():
+Description: Creates a new array by applying a function to each element of the original array. Returns the transformed array.
+Sinhala: map() ක්‍රියාකාරකම, මුල් ලැයිස්තුවේ සෑම අංගයකටම ක්‍රියාවක් පවත්වමින් නව ලැයිස්තුවක් නිර්මාණය කරයි. වින්‍යාසය ලැයිස්තුව ආපසු ලබා දෙයි.
+
+filter():
+Description: Creates a new array by including elements that pass a test specified in a callback function.
+Sinhala: filter() ක්‍රියාකාරකම, යෙදුම් ක්‍රියාවක් වලංගු කරන අංග එක් කරමින් නව ලැයිස්තුවක් නිර්මාණය කරයි.
+
+Searching and Sorting
+
+find():
+Description: Returns the first element in the array that satisfies the provided testing function.
+Sinhala: find() ක්‍රියාකාරකම, ලබා දෙන පරීක්ෂණ ක්‍රියාව විශේෂිත කරන මුල් අංගය ආපසු ලබා දෙයි.
+
+findIndex():
+Description: Returns the index of the first matching element instead of the element itself.
+Sinhala: findIndex() ක්‍රියාකාරකම, අංගයම නොව මුල් අංගය වඩා යොමු කිරීමේ අංකය ආපසු ලබා දෙයි.
+
+Modifying Arrays
+
+splice():
+Description: Adds or removes elements from an array. Can delete, add, or replace existing elements.
+Sinhala: splice() ක්‍රියාකාරකම, ලැයිස්තුවෙන් අංග එකතු කිරීමට හෝ ඉවත් කිරීමට භාවිතා වේ. අංග මකන්න, නව අංග එකතු කරන්න, හෝ පවතින අංග වෙනස් කිරීමට හැකි වේ.
+
+slice():
+Description: Creates a new array by selecting a portion of the original array without modifying the original array.
+Sinhala: slice() ක්‍රියාකාරකම, මුල් ලැයිස්තුවෙන් කොටසක් තෝරා ගනිමින් නව ලැයිස්තුවක් නිර්මාණය කරයි. මුල් ලැයිස්තුව නොකෙරේ.
+
+concat():
+Description: Merges two or more arrays and returns a new array without modifying the original arrays.
+Sinhala: concat() ක්‍රියාකාරකම, දෙකක් හෝ ඊට වැඩි ලැයිස්තු එකතු කරමින් නව ලැයිස්තුවක් ආපසු ලබා දෙයි. මුල් ලැයිස්තු වෙනස් නොකරයි.
+
+Advanced Array Functions
+
+reduce():
+Description: Executes a reducer function on each element of the array, resulting in a single output value.
+Sinhala: reduce() ක්‍රියාකාරකම, ලැයිස්තුවේ සෑම අංගයකටම යෙදුම් ක්‍රියාවක් ක්‍රියාත්මක කරයි. එය එක් ප්‍රතිඵලයක් ලෙස දායක වේ.
+
+every():
+Description: Checks if all elements in an array pass a given test. Returns true if all elements pass; otherwise, returns false.
+Sinhala: every() ක්‍රියාකාරකම, ලැයිස්තුවේ සියලුම අංග එකම පරීක්ෂාවකට සමත්වීම් පරීක්ෂා කරයි. සියලුම අංග සමත්වන්නේ නම් true ප්‍රතිඵලය ලබා දෙයි, නැතහොත් false.
+
+some():
+Description: Checks if at least one element passes a given test. Returns true if at least one passes.
+Sinhala: some() ක්‍රියාකාරකම, එක හෝ වඩාත් කෙනෙක් පරීක්ෂාවක් සම්පූර්ණ කරයි. ප්‍රතිඵලයක් true නම්, එය හැකි වේ.
