@@ -122,4 +122,27 @@ let moreFruits = ["banana","orange"];
 let allFruits = fruits7.concat(moreFruits);
 console.log(allFruits); //[ 'apple', 'mango', 'banana', 'orange' ]
 
+console.log("================")
+// 14.reduce()
 
+let number = [1,2,3,4];
+let sum = number.reduce((acc,num) => acc +num,0);
+console.log(sum) //10
+
+
+console.log("================")
+
+// 15.every()
+
+let number2 = [2,4,6];
+let allEven = number2.every((num) => num % 2 === 0);
+console.log(allEven); //true
+
+
+console.log("================")
+
+// 16.some()
+
+let number3 = [1,2,3];
+let hasEven = number3.some((num) => num % 2 ==0);
+console.log(hasEven); //true
