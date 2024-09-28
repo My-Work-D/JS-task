@@ -94,7 +94,32 @@ console.log("================")
 // 10.sort()
 
 let numbers5 = [3,1,4,2];
-numbers5.sort((a,b) => a-b);
+numbers5.sort((a,b) => a-b); //ascending order set to the data
 console.log(numbers5); // [1,2,3,4]
 
 console.log("================")
+
+// 11.splice()
+
+let fruits5 = ["apple","banana","mango"];
+fruits5.splice(1,1,"orange");
+console.log(fruits5); //[ 'apple', 'orange', 'mango' ]
+
+console.log("================")
+
+
+//12.slice()
+
+let fruits6 = ["apple","banana","mango","orange"];
+let tropicalFruits = fruits6.slice(1,3);
+console.log(tropicalFruits); //[ 'banana', 'mango' ]
+
+console.log("================")
+
+// 13. concat()
+let fruits7 = ["apple","mango"];
+let moreFruits = ["banana","orange"];
+let allFruits = fruits7.concat(moreFruits);
+console.log(allFruits); //[ 'apple', 'mango', 'banana', 'orange' ]
+
+
