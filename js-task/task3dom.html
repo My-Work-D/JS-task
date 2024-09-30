@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title DOM Events</title>
+</head>
+<body>
+<button onclick="console.log('One1')" onclick="console.log('Two')">
+    Click Me
+</button>
+<!--console log to -one-->
+<button id="button" onclick="console.log('One2')">
+    Click Me
+</button>
+<!--console log to two-->
+
+<button id="button1" onclick="console.log('One3')">
+    Click Me
+</button>
+<!--console log to one and two-->
+<button id="button2" onclick="console.log('One')">
+    Click Me
+</button>
+<!--console log to  two and three-->
+<script>
+    const button1 = document.getElementById('button');
+
+    button1.onclick = function() {
+        console.log('Two');
+    }
+    const button2 = document.getElementById('button1');
+
+    button2.addEventListener('click', function() {
+        console.log('Two');
+    });
+
+    const button3 = document.getElementById('button2');
+
+    button3.addEventListener('click', function() {
+        console.log('Two');
+    });
+
+    button3.onclick = function() {
+        console.log('Three');
+    }
+</script>
+</body>
+</html>
