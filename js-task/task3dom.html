@@ -18,10 +18,26 @@
     Click Me
 </button>
 <!--console log to one and two-->
+
 <button id="button2" onclick="console.log('One')">
     Click Me
 </button>
 <!--console log to  two and three-->
+
+<button id="button4">
+    Click Me
+</button>
+<!--console log to   one4 and two-->
+
+<button id="button5">
+    Click Me
+</button>
+<!--console log to   one5 and three-->
+
+<button id="button6" onclick="console.log('One')">
+    Click Me
+</button>
+<!--console log to one and two-->
 <script>
     const button1 = document.getElementById('button');
 
@@ -43,6 +59,38 @@
     button3.onclick = function() {
         console.log('Three');
     }
+
+    const button4 = document.getElementById('button4');
+
+    button4.addEventListener('click', function() {
+        console.log('One4');
+    });
+
+    button4.onclick = function() {
+        console.log('Two');
+    }
+
+    const button5 = document.getElementById('button5');
+
+    button5.addEventListener('click', function() {
+        console.log('One5');
+    });
+
+    button5.onclick = function() {
+        console.log('Two');
+    }
+
+    button5.setAttribute('onclick', "console.log('Three')");
+
+    const button6 = document.getElementById('button6');
+
+    function clickHandler() {
+        console.log('Two');
+    }
+
+    button6.addEventListener('click', clickHandler);
+
+    button6.addEventListener('click', clickHandler, false);
 </script>
 </body>
 </html>
