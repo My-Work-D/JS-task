@@ -37,7 +37,30 @@
 <button id="button6" onclick="console.log('One')">
     Click Me
 </button>
+
 <!--console log to one and two-->
+<button id="button8" style="display: none;">
+    Click Me
+</button>
+<!--console log to one and two-->
+
+<p onclick="console.log('One')">
+<div onclick="console.log('Two')">
+    <h1 onclick="console.log('Three')">
+        Click Me
+    </h1>
+</div>
+</p>
+<!--console log to three and two-->
+
+<div onclick="console.log('One')">
+    <div onclick="return false;console.log('Two');">
+        <div onclick="console.log('Three')">
+            Click Me
+        </div>
+    </div>
+</div>
+<!--console log to three and one-->
 <script>
     const button1 = document.getElementById('button');
 
@@ -91,6 +114,21 @@
     button6.addEventListener('click', clickHandler);
 
     button6.addEventListener('click', clickHandler, false);
+
+    const button8 = document.getElementById('button8');
+
+    button8.onclick = function() {
+        console.log('One');
+    }
+
+    button8.addEventListener('click', function() {
+        console.log('Two');
+    });
+
+    setTimeout(function(){
+        button8.click();
+    }, 1000);
+
 </script>
 </body>
 </html>
